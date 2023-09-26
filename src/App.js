@@ -1,6 +1,26 @@
 import './App.css';
 
 function App() {
+  // var tablinks = document.getElementsByClassName('tab-links');
+  // var tabcontents = document.getElementsByClassName('tab-contents');
+
+  // opentab = (tabname) => {
+  //     for (tablink of tablinks) {
+  //         tablink.classList.remove('active-link')
+  //     }
+  //     for (tabcontent of tabcontents) {
+  //         tabcontent.classList.remove('active-tab')
+  //     }
+  //     event.currentTarget.classList.add("active-link");
+  //     document.getElementById(tabname).classList.add('active-tab')
+  // }
+  // var sidemenu = document.getElementById('sidemenu');
+
+  // function Menu(par) {
+  //     sidemenu.style.right = par;
+  // }
+
+
   return (
     <>
       <div id="header">
@@ -12,9 +32,9 @@ function App() {
               <li><a href="#about">About</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
-              <i className="fas" onclick="Menu('-200px')">X</i>
+              {/* <i className="fas" onClick="Menu('-200px')">X</i> */}
             </ul>
-            <i className="fas" onclick="Menu('0')"> = </i>
+            {/* <i className="fas" onClick="Menu('0')"> = </i> */}
           </nav>
           <div className="header-text">
             <h1>Hi, I'm
@@ -47,9 +67,9 @@ function App() {
               <h1 className="sub-title">About Me</h1>
               <p>agsfdgjdsfkdhfasdjfjsadfhsdgfd dsgajfd fafa asd fjasdf dsj df</p>
               <div className="tab-titles">
-                <p className="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p className="tab-links" onclick="opentab('experience')">Experience</p>
-                <p className="tab-links" onclick="opentab('education')">Education</p>
+                {/* <p className="tab-links active-link" onClick="opentab('skills')">Skills</p> */}
+                {/* <p className="tab-links" onClick="opentab('experience')">Experience</p> */}
+                {/* <p className="tab-links" onClick="opentab('education')">Education</p> */}
               </div>
               <div className="tab-contents active-tab" id="skills">
                 <ul>
@@ -110,7 +130,7 @@ function App() {
               </div>
             </div>
           </div>
-          <a href="#" className="btn">See more</a>
+          {/* <a href="#" className="btn">See more</a> */}
         </div>
       </div>
       {/* <!-- --------------------contact----------------------------- --> */}
@@ -124,38 +144,17 @@ function App() {
               <a href="images\Rakesh-resume.docx" className="btn btn2">Download CV</a>
             </div>
             <div className="contact-right">
-              {/* <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" className="btn btn2">Submit</button>
-                    </form> */}
+              {/* <form> */}
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" className="btn btn2">Submit</button>
+              {/* </form> */}
 
             </div>
           </div>
         </div>
       </div>
-      {/* <script>
-        var tablinks = document.getElementsByClassclassNameName('tab-links');
-        var tabcontents = document.getElementsByClassclassNameName('tab-contents');
-
-        opentab = (tabname) => {
-            for (tablink of tablinks) {
-                tablink.classNameList.remove('active-link')
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classNameList.remove('active-tab')
-            }
-            event.currentTarget.classNameList.add("active-link");
-            document.getElementById(tabname).classNameList.add('active-tab')
-        }
-        var sidemenu = document.getElementById('sidemenu');
-
-        function Menu(par) {
-            sidemenu.style.right = par;
-        }
-
-    </script> */}
     </>
   );
 }
